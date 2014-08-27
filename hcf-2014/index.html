@@ -45,7 +45,24 @@ jQuery(document).ready(function($){
 	videoplayersettings.design_skin = "skin_aurora";
 	videoplayersettings.settings_youtube_usecustomskin = "off";
 	
-	jQuery("#vg11").vGallery({
+	jQuery("#vg10").vGallery({
+	  settings_mode:"normal",
+	   menuSpace:0,
+	   randomise:"off",
+	   autoplay :"off",
+		cueFirstVideo: "on",
+	   autoplayNext : "on",
+		nav_type: "thumbs",
+	   menuitem_width:275,
+	   menuitem_height:75,
+	   menuitem_space:1,
+	   menu_position:"right",
+	   transition_type:"fade",
+	   design_skin: "skin_navtransparent",
+	   videoplayersettings : videoplayersettings
+	});
+    
+    jQuery("#vg11").vGallery({
 	  settings_mode:"normal",
 	   menuSpace:0,
 	   randomise:"off",
@@ -351,7 +368,25 @@ jQuery(document).ready(function($){
 					<p class="title"><a href="#section1">ΟΜΑΔΙΚΟ FREE STYLE POM</a></p>
 					<div class="content" data-slug="section1">
 						<div class="section-container vertical-tabs" data-section="vertical-tabs">
-
+                            
+                            <section>
+								<p class="title" data-section-title><a href="#">SENIOR CHEER</a></p>
+								<div class="content" data-section-content>
+									<div class="videogallery-con currGallery" style="width:745px; height:300px;">
+										<div class="preloader"></div>
+										
+										<div id="vg10" class="videogallery skin_default" style="width:745px; height:300px; opacity:0;">
+											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="y07m8xnRddc">
+												<div class="menuDescription">
+													{ytthumb}
+													<div class="the-title">ΑΜΑΖΟΝΕΣ ΒΑΡΗΣ</div>
+                                                    CHEER MOMS 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
 <!--
 							<section>
 								<p class="title" data-section-title><a href="#">SENIOR</a></p>
