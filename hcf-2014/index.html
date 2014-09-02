@@ -265,6 +265,23 @@ jQuery(document).ready(function($){
 	   design_skin: "skin_navtransparent",
 	   videoplayersettings : videoplayersettings
 	});
+    
+    jQuery("#vg32").vGallery({
+	  settings_mode:"normal",
+	   menuSpace:0,
+	   randomise:"off",
+	   autoplay :"off",
+	   cueFirstVideo: "on",
+	   autoplayNext : "on",
+	   nav_type: "thumbs",
+	   menuitem_width:275,
+	   menuitem_height:75,
+	   menuitem_space:1,
+	   menu_position:"right",
+	   transition_type:"fade",
+	   design_skin: "skin_navtransparent",
+	   videoplayersettings : videoplayersettings
+	});
 	
 	jQuery("#vg41").vGallery({
 	  settings_mode:"normal",
@@ -630,62 +647,57 @@ jQuery(document).ready(function($){
 										
 										<div id="vg13" class="videogallery skin_default" style="width:745px; height:300px; opacity:0;">
 											
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="DtR16jl0Y6o">
-												<div class="menuDescription">
-													{ytthumb}
-													<div class="the-title">ΑΜΑΖΟΝΕΣ ΗΛΙΟΥΠΟΛΗΣ</div>
-                                                    CITY LADIES
-												</div>
-											</div>
-                                            
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="UhoJFl0PMbQ">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="">
 												<div class="menuDescription">
 													{ytthumb}
 													<div class="the-title">ΕΚΠΑΙΔΕΥΤΗΡΙΑ ΠΛΑΤΩΝΑ</div>
 												</div>
 											</div>
                                             
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="BeKs38mHQpE">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="">
 												<div class="menuDescription">
 													{ytthumb}
-													<div class="the-title">ΑΜAΖΟΝΕΣ ΒΑΡΗΣ</div>
+													<div class="the-title">ΑΜΑΖΟΝΕΣ ΒΑΡΗΣ</div>
+                                                    DYNAMITES
 												</div>
 											</div>
                                             
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="MMlKKUuYgik">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="usN3fJtEzEk">
 												<div class="menuDescription">
 													{ytthumb}
-													<div class="the-title">LITΤLE WOMANS CLUB</div>
-                                                    ΛΑΜΙΑ B’ ΓΚΡΟΥΠ
+													<div class="the-title">Α.Κ.Ο.ΛΙΒΑΔΕΙΑΣ </div>
+                                                    Α.Κ.Ο.Λ. GROUP 2 
 												</div>
 											</div>
                                             
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="j7BXDF5ZHY4">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="1r7BHGgrfWU">
 												<div class="menuDescription">
 													{ytthumb}
-													<div class="the-title">ΑΚΟ ΛΙΒΑΔΕΙΑΣ</div>
+													<div class="the-title">GOLDEN STAR BY BETTY, ΑΓΟΠ ΜΥΡΤΑΛΗ</div>
+                                                    PLATINUM
 												</div>
 											</div>
                                             
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="oMUZ3P7f1to">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="VsmkE4K6ZOk">
 												<div class="menuDescription">
 													{ytthumb}
-													<div class="the-title">GOLDEN STAR BY BETTY</div>
+													<div class="the-title">LITTLE WOMAN’S CLUB </div>
 												</div>
 											</div>
                                             
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="YHu58kLw76Y">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="2Pk4ngYMlEU">
 												<div class="menuDescription">
 													{ytthumb}
-													<div class="the-title">ΜΑΖΟΡΕΤΕΣ ΔΗΜΟΥ ΛΟΥΤΡΑΚΙΟΥ</div>
+													<div class="the-title">ΑΜΑΖΟΝΕΣ ΒΑΡΗΣ</div>
+                                                    GROUP 2
 												</div>
 											</div>
                                             
-                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="M2NUhr3upNk">
+                                            <div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="">
 												<div class="menuDescription">
 													{ytthumb}
-													<div class="the-title">LITΤLE WOMANS CLUB</div>
-                                                    ΛΑΜΙΑ A’ ΓΚΡΟΥΠ
+													<div class="the-title">Α.Κ.Ο.ΛΙΒΑΔΕΙΑΣ</div>
+                                                    Α.Κ.Ο.Λ. GROUP 1
 												</div>
 											</div>
                                             
@@ -693,8 +705,8 @@ jQuery(document).ready(function($){
 									</div>
 								</div>
 							</section>
--->
-								
+
+-->								
 <!--
 							<section>
 								<p class="title" data-section-title><a href="#">JUNIOR</a></p>
@@ -1223,39 +1235,56 @@ jQuery(document).ready(function($){
 					<p class="title"><a href="#section2">ΟΜΑΔΙΚΟ - ΑΚΡΟΒΑΤΙΚΟ CHEERLEADING</a></p>
 					<div class="content" data-slug="section2">
 						<div class="section-container vertical-tabs" data-section="vertical-tabs">
-<!--
+
+                            <section>
+								<p class="title" data-section-title><a href="#">SENIOR</a></p>
+								<div class="content" data-section-content>
+									<div class="videogallery-con currGallery" style="width:745px; height:300px;">
+										<div class="preloader"></div>
+										
+										<div id="vg31" class="videogallery skin_default" style="width:745px; height:300px; opacity:0;">
+											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="Bn208zWfbjQ">
+												<div class="menuDescription">
+													{ytthumb}
+													<div class="the-title">Σ.Η.Γ.Α. ΓΥΜΝΑΘΛΟΣ ΗΛΙΟΥΠΟΛΗΣ (ΑΝΕΣΤΗ ΣΟΝΙΑ)</div>
+                                                    LIGERS
+												</div>
+											</div>
+                                            
+										</div>
+									</div>
+								</div>
+							</section>
+                            
+ 
 							<section>
 								<p class="title" data-section-title><a href="#">TEENS</a></p>
 								<div class="content" data-section-content>
 									<div class="videogallery-con currGallery" style="width:745px; height:300px;">
 										<div class="preloader"></div>
 										
-										<div id="vg31" class="videogallery skin_default" style="width:745px; height:300px; opacity:0;">
-											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="ffGTCx9I0Gk">
+										<div id="vg32" class="videogallery skin_default" style="width:745px; height:300px; opacity:0;">
+											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="m86XAf3zOjc">
+												<div class="menuDescription">
+													{ytthumb}
+													<div class="the-title">Α.Κ.Ο.ΛΙΒΑΔΕΙΑΣ</div>
+                                                    Α.Κ.Ο.Λ
+												</div>
+											</div>
+											
+											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="TVOWOUCWLDs">
 												<div class="menuDescription">
 													{ytthumb}
 													<div class="the-title">ΓΑΣ ΑΧΙΛΕΑΣ ΓΛΥΦΑΔΑΣ </div>
+                                                    LION QUEENS
 												</div>
 											</div>
-											
-											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="PCK3M_eQT_k">
-												<div class="menuDescription">
-													{ytthumb}
-													<div class="the-title">ΓΣΗ ΓΥΜΝΑΘΛΟΣ</div>
-												</div>
-											</div>
-											
-											<div class="vplayer-tobe" data-videoTitle="YouTube Video" data-type="youtube" data-src="s-DY3rfvv3U">
-												<div class="menuDescription">
-													{ytthumb}
-													<div class="the-title">ΑΚΟ ΛΙΒΑΔΕΙΑΣ</div>
-												</div>
-											</div>
+
 										</div>
 									</div>
 								</div>
 							</section>
--->
+
 						</div>
 					</div>
 				</section>
