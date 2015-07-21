@@ -45,7 +45,7 @@
 		videoplayersettings.design_skin = "skin_aurora";
 		videoplayersettings.settings_youtube_usecustomskin = "off";
 		
-		jQuery("#vg01").vGallery({
+		jQuery("#vg01","#vg02").vGallery({
 		  settings_mode:"normal",
 		   menuSpace:0,
 		   randomise:"off",
@@ -62,22 +62,7 @@
 		   videoplayersettings : videoplayersettings
 		});
 	    
-	    jQuery("#vg02").vGallery({
-		  settings_mode:"normal",
-		   menuSpace:0,
-		   randomise:"off",
-		   autoplay :"off",
-			cueFirstVideo: "on",
-		   autoplayNext : "on",
-			nav_type: "thumbs",
-		   menuitem_width:275,
-		   menuitem_height:75,
-		   menuitem_space:1,
-		   menu_position:"right",
-		   transition_type:"fade",
-		   design_skin: "skin_navtransparent",
-		   videoplayersettings : videoplayersettings
-		});
+	    
 	});
 
 </script>
