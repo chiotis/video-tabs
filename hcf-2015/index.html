@@ -1,71 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/56579130/clients/mazoretes/foundation.css" />
-<link rel="stylesheet" type="text/css" href="http://mazoretes.gr/videogallery/videogallery/vplayer.css"/>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/56579130/clients/mazoretes/foundation.css" />
+	<link rel="stylesheet" type="text/css" href="http://mazoretes.gr/videogallery/videogallery/vplayer.css"/>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="http://mazoretes.gr/videogallery/videogallery/skin_white.css"/>
-<link rel="stylesheet" type="text/css" href="http://mazoretes.gr/videogallery/zoombox/zoombox.css"/>	
+	<link rel="stylesheet" type="text/css" href="http://mazoretes.gr/videogallery/videogallery/skin_white.css"/>
+	<link rel="stylesheet" type="text/css" href="http://mazoretes.gr/videogallery/zoombox/zoombox.css"/>	
 
-<script src="https://dl.dropboxusercontent.com/u/56579130/clients/mazoretes/foundation.min.js"></script>
-<script src="https://dl.dropboxusercontent.com/u/56579130/clients/mazoretes/foundation.section.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/56579130/clients/mazoretes/foundation.min.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/56579130/clients/mazoretes/foundation.section.js"></script>
 
-<style type="text/css">
-	
-	body {
-		font-family: 'helvetica neue', arial, sans-serif;
-		font-size: 14px;
-		background: #2D118E;
-	}
-	a {
-		text-decoration: none;
-	}
-
-</style>
-
-<script>
-	jQuery(document).foundation();	
-
-	var videoplayersettings = {
-		autoplay : "on",
-		videoWidth : 597,
-		videoHeight : 300,
-		constrols_out_opacity : 0.1,
-		constrols_normal_opacity : 0.9,
-		settings_hideControls : "off",
-	    design_scrubbarWidth:-201,
-	   	design_skin: 'skin_white',
-		design_background_offsetw: -95,
-		cueVideo : 'off',
-		responsive : 'on'
-	};
-
-	jQuery(document).ready(function($){
-		videoplayersettings.design_skin = "skin_aurora";
-		videoplayersettings.settings_youtube_usecustomskin = "off";
+	<style type="text/css">
 		
-		jQuery("#vg01","#vg02").vGallery({
-		  settings_mode:"normal",
-		   menuSpace:0,
-		   randomise:"off",
-		   autoplay :"off",
-			cueFirstVideo: "on",
-		   autoplayNext : "on",
-			nav_type: "thumbs",
-		   menuitem_width:275,
-		   menuitem_height:75,
-		   menuitem_space:1,
-		   menu_position:"right",
-		   transition_type:"fade",
-		   design_skin: "skin_navtransparent",
-		   videoplayersettings : videoplayersettings
-		});
-	    
-	    
-	});
+		body {
+			font-family: 'helvetica neue', arial, sans-serif;
+			font-size: 14px;
+			background: #2D118E;
+		}
+		a {
+			text-decoration: none;
+		}
 
-</script>
+	</style>
+
+	<script>
+		jQuery(document).foundation();	
+
+		var videoplayersettings = {
+			autoplay : "on",
+			videoWidth : 597,
+			videoHeight : 300,
+			constrols_out_opacity : 0.1,
+			constrols_normal_opacity : 0.9,
+			settings_hideControls : "off",
+		    design_scrubbarWidth:-201,
+		   	design_skin: 'skin_white',
+			design_background_offsetw: -95,
+			cueVideo : 'off',
+			responsive : 'on'
+		};
+
+		jQuery(document).ready(function($){
+			videoplayersettings.design_skin = "skin_aurora";
+			videoplayersettings.settings_youtube_usecustomskin = "off";
+			
+			jQuery("#vg01","#vg02").vGallery({
+			  settings_mode:"normal",
+			   menuSpace:0,
+			   randomise:"off",
+			   autoplay :"off",
+				cueFirstVideo: "on",
+			   autoplayNext : "on",
+				nav_type: "thumbs",
+			   menuitem_width:275,
+			   menuitem_height:75,
+			   menuitem_space:1,
+			   menu_position:"right",
+			   transition_type:"fade",
+			   design_skin: "skin_navtransparent",
+			   videoplayersettings : videoplayersettings
+			});
+		    
+		    
+		});
+
+	</script>
 
 </head>
 
