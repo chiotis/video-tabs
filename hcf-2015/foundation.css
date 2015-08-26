@@ -1,0 +1,405 @@
+/* Sections */
+.section-container, .section-container.auto {
+  width: 100%;
+  display: block;
+  margin-bottom: 1.25em;
+  border: 1px solid #1c0764;
+  border-top: none; }
+  .section-container > section, .section-container > .section, .section-container.auto > section, .section-container.auto > .section {
+    position: relative; }
+    .section-container > section > .title, .section-container > .section > .title, .section-container.auto > section > .title, .section-container.auto > .section > .title {
+      background-color: #2d118e;
+      cursor: pointer;
+      margin-bottom: 0; }
+      .section-container > section > .title a, .section-container > .section > .title a, .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
+        padding: 0.6em;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 0.7em;
+        white-space: normal; }
+      .section-container > section > .title:hover, .section-container > .section > .title:hover, .section-container.auto > section > .title:hover, .section-container.auto > .section > .title:hover {
+        background-color: #2d118e; }
+    .section-container > section .content, .section-container > .section .content, .section-container.auto > section .content, .section-container.auto > .section .content {
+      display: none;
+      padding: 0.6em;
+      background-color: #1c0764; }
+      .section-container > section .content > *:last-child, .section-container > .section .content > *:last-child, .section-container.auto > section .content > *:last-child, .section-container.auto > .section .content > *:last-child {
+        margin-bottom: 0; }
+      .section-container > section .content > *:first-child, .section-container > .section .content > *:first-child, .section-container.auto > section .content > *:first-child, .section-container.auto > .section .content > *:first-child {
+        padding-top: 0; }
+      .section-container > section .content > *:last-child:not(.flex-video), .section-container > .section .content > *:last-child:not(.flex-video), .section-container.auto > section .content > *:last-child:not(.flex-video), .section-container.auto > .section .content > *:last-child:not(.flex-video) {
+        padding-bottom: 0; }
+    .section-container > section.active > .content, .section-container > .section.active > .content, .section-container.auto > section.active > .content, .section-container.auto > .section.active > .content {
+      display: block; }
+    .section-container > section.active > .title, .section-container > .section.active > .title, .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title {
+      background: #d5d5d5; }
+      .section-container > section.active > .title a, .section-container > .section.active > .title a, .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a {
+        color: #fff; }
+    .section-container > section > .title, .section-container > .section > .title, .section-container.auto > section > .title, .section-container.auto > .section > .title {
+      top: 0;
+      width: 100%;
+      margin: 0;
+      border-top: solid 1px #1c0764; }
+      .section-container > section > .title a, .section-container > .section > .title a, .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
+        width: 100%; }
+
+.section-container.tabs {
+  border: 0;
+  position: relative; }
+  .section-container.tabs > section, .section-container.tabs > .section {
+    border: 0;
+    position: static; }
+    .section-container.tabs > section > .title, .section-container.tabs > .section > .title {
+      background-color: #2d118e;
+      cursor: pointer;
+      margin-bottom: 0; }
+      .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
+        padding: 0.6em;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 0.7em;
+        white-space: normal; }
+      .section-container.tabs > section > .title:hover, .section-container.tabs > .section > .title:hover {
+        background-color: #2d118e; }
+    .section-container.tabs > section .content, .section-container.tabs > .section .content {
+      display: none;
+      padding: 0.6em;
+      background-color: #1c0764; }
+      .section-container.tabs > section .content > *:last-child, .section-container.tabs > .section .content > *:last-child {
+        margin-bottom: 0; }
+      .section-container.tabs > section .content > *:first-child, .section-container.tabs > .section .content > *:first-child {
+        padding-top: 0; }
+      .section-container.tabs > section .content > *:last-child:not(.flex-video), .section-container.tabs > .section .content > *:last-child:not(.flex-video) {
+        padding-bottom: 0; }
+    .section-container.tabs > section.active > .content, .section-container.tabs > .section.active > .content {
+      display: block; }
+    .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
+      background: white; }
+      .section-container.tabs > section.active > .title a, .section-container.tabs > .section.active > .title a {
+        color: #ffffff; }
+    .section-container.tabs > section > .title, .section-container.tabs > .section > .title {
+      width: auto;
+      border: solid 1px #1c0764;
+      border-right: 0;
+      border-bottom: 0;
+      position: absolute;
+      top: 0;
+      z-index: 1; }
+      .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
+        width: 100%; }
+    .section-container.tabs > section:last-child .title, .section-container.tabs > .section:last-child .title {
+      border-right: solid 1px #1c0764; }
+    .section-container.tabs > section .content, .section-container.tabs > .section .content {
+      border: solid 1px #1c0764;
+      position: absolute;
+      z-index: 10;
+      display: none;
+      top: -1px; }
+    .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
+      z-index: 11;
+      border-bottom: 0;
+      background-color: #1c0764; }
+    .section-container.tabs > section.active > .content, .section-container.tabs > .section.active > .content {
+      position: relative; }
+
+@media only screen and (min-width: 768px) {
+  .section-container.auto {
+    border: 0;
+    position: relative; }
+    .section-container.auto > section, .section-container.auto > .section {
+      border: 0;
+      position: static; }
+      .section-container.auto > section > .title, .section-container.auto > .section > .title {
+        background-color: #2d118e;
+        cursor: pointer;
+        margin-bottom: 0; }
+        .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
+          padding: 0.6em;
+          display: inline-block;
+          color: #ffffff;
+          font-size: 0.7em;
+          white-space: normal; }
+        .section-container.auto > section > .title:hover, .section-container.auto > .section > .title:hover {
+          background-color: #2d118e; }
+      .section-container.auto > section .content, .section-container.auto > .section .content {
+        display: none;
+        padding: 0.6em;
+        background-color: #1c0764; }
+        .section-container.auto > section .content > *:last-child, .section-container.auto > .section .content > *:last-child {
+          margin-bottom: 0; }
+        .section-container.auto > section .content > *:first-child, .section-container.auto > .section .content > *:first-child {
+          padding-top: 0; }
+        .section-container.auto > section .content > *:last-child:not(.flex-video), .section-container.auto > .section .content > *:last-child:not(.flex-video) {
+          padding-bottom: 0; }
+      .section-container.auto > section.active > .content, .section-container.auto > .section.active > .content {
+        display: block; }
+      .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title {
+        background: #1c0764; }
+        .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a {
+          color: #fff; font-weight:bold;}
+      .section-container.auto > section > .title, .section-container.auto > .section > .title {
+        width: auto;
+        border: solid 1px #1c0764;
+        border-right: 0;
+        border-bottom: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1; }
+        .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
+          width: 100%; }
+      .section-container.auto > section:last-child .title, .section-container.auto > .section:last-child .title {
+        border-right: solid 1px #1c0764; }
+      .section-container.auto > section .content, .section-container.auto > .section .content {
+        border: solid 1px #1c0764;
+        position: absolute;
+        z-index: 10;
+        display: none;
+        top: -1px; }
+      .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title {
+        z-index: 11;
+        border-bottom: 0;
+        background-color: #1c0764; }
+      .section-container.auto > section.active > .content, .section-container.auto > .section.active > .content {
+        position: relative; }
+
+  .section-container.accordion .section {
+    padding-top: 0 !important; }
+
+  .section-container.vertical-tabs {
+    border: 1px solid #1c0764;
+    position: relative; }
+    .section-container.vertical-tabs section,
+    .section-container.vertical-tabs .section {
+      padding-top: 0 !important;
+      border: 0;
+      position: static; }
+      .section-container.vertical-tabs section > .title,
+      .section-container.vertical-tabs .section > .title {
+        background-color: #2d118e;
+        cursor: pointer;
+        margin-bottom: 0; }
+        .section-container.vertical-tabs section > .title a,
+        .section-container.vertical-tabs .section > .title a {
+          padding: 0.6em;
+          display: inline-block;
+          color: #ffffff;
+          font-size: 0.7em;
+          white-space: normal; }
+        .section-container.vertical-tabs section > .title:hover,
+        .section-container.vertical-tabs .section > .title:hover {
+          background-color: #2d118e; }
+      .section-container.vertical-tabs section .content,
+      .section-container.vertical-tabs .section .content {
+        display: none;
+        padding: 0;
+        background-color: #1c0764; }
+        .section-container.vertical-tabs section .content > *:last-child,
+        .section-container.vertical-tabs .section .content > *:last-child {
+          margin-bottom: 0; }
+        .section-container.vertical-tabs section .content > *:first-child,
+        .section-container.vertical-tabs .section .content > *:first-child {
+          padding-top: 0; }
+        .section-container.vertical-tabs section .content > *:last-child:not(.flex-video),
+        .section-container.vertical-tabs .section .content > *:last-child:not(.flex-video) {
+          padding-bottom: 0; }
+      .section-container.vertical-tabs section.active > .content,
+      .section-container.vertical-tabs .section.active > .content {
+        display: block; }
+      .section-container.vertical-tabs section.active > .title,
+      .section-container.vertical-tabs .section.active > .title {
+        background: #11053d; }
+        .section-container.vertical-tabs section.active > .title a,
+        .section-container.vertical-tabs .section.active > .title a {
+          color: #ffffff; }
+      .section-container.vertical-tabs section > .title,
+      .section-container.vertical-tabs .section > .title {
+        position: absolute;
+        border-top: solid 1px #1c0764;
+        width: 12.5em; }
+      .section-container.vertical-tabs section:first-child .title,
+      .section-container.vertical-tabs .section:first-child .title {
+        border-top: 0; }
+      .section-container.vertical-tabs section .content,
+      .section-container.vertical-tabs .section .content {
+        display: block;
+        position: relative;
+        left: 12.5em;
+/*
+        border-left: solid 1px #cccccc;
+*/
+        z-index: 10; }
+      .section-container.vertical-tabs section.active > .title,
+      .section-container.vertical-tabs .section.active > .title {
+        background-color: #11053d;
+        width: 12.5625em;
+        border-right: solid 0 transparent;
+        z-index: 11; }
+      .section-container.vertical-tabs section.active:last-child .title,
+      .section-container.vertical-tabs .section.active:last-child .title {
+        border-bottom: 0; }
+
+  .section-container.vertical-nav {
+    border: 0;
+    position: relative; }
+    .section-container.vertical-nav > section, .section-container.vertical-nav > .section {
+      padding-top: 0 !important;
+      position: relative; }
+      .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > .title {
+        background-color: #2d118e;
+        cursor: pointer;
+        margin-bottom: 0; }
+        .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > .title a {
+          padding: 0.9375em;
+          display: inline-block;
+          color: #ffffff;
+          font-size: 0.875em;
+          white-space: normal; }
+        .section-container.vertical-nav > section > .title:hover, .section-container.vertical-nav > .section > .title:hover {
+          background-color: #2d118e; }
+      .section-container.vertical-nav > section .content, .section-container.vertical-nav > .section .content {
+        display: none;
+        padding: 0.9375em;
+        background-color: #1c0764; }
+        .section-container.vertical-nav > section .content > *:last-child, .section-container.vertical-nav > .section .content > *:last-child {
+          margin-bottom: 0; }
+        .section-container.vertical-nav > section .content > *:first-child, .section-container.vertical-nav > .section .content > *:first-child {
+          padding-top: 0; }
+        .section-container.vertical-nav > section .content > *:last-child:not(.flex-video), .section-container.vertical-nav > .section .content > *:last-child:not(.flex-video) {
+          padding-bottom: 0; }
+      .section-container.vertical-nav > section.active > .content, .section-container.vertical-nav > .section.active > .content {
+        display: block; }
+      .section-container.vertical-nav > section.active > .title, .section-container.vertical-nav > .section.active > .title {
+        background: #d5d5d5; }
+        .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a {
+          color: #ffffff; }
+      .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > .title {
+        border-top: none;
+        border: solid 1px #1c0764; }
+        .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > .title a {
+          display: block;
+          width: 100%; }
+      .section-container.vertical-nav > section .content, .section-container.vertical-nav > .section .content {
+        display: none; }
+      .section-container.vertical-nav > section:first-child .title, .section-container.vertical-nav > .section:first-child .title {
+        border-bottom: none; }
+      .section-container.vertical-nav > section.active > .content, .section-container.vertical-nav > .section.active > .content {
+        display: block;
+        position: absolute;
+        left: 100%;
+        top: 0px;
+        z-index: 999;
+        min-width: 12.5em;
+        border: solid 1px #1c0764; }
+
+  .section-container.horizontal-nav {
+    position: relative;
+    background: #2d118e;
+    border: 1px solid #1c0764; }
+    .section-container.horizontal-nav > section, .section-container.horizontal-nav > .section {
+      padding-top: 0;
+      border: 0;
+      position: static; }
+      .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > .title {
+        background-color: #2d118e;
+        cursor: pointer;
+        margin-bottom: 0; }
+        .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > .title a {
+          padding: 0.9375em;
+          display: inline-block;
+          color: #ffffff;
+          font-size: 0.875em;
+          white-space: normal; }
+        .section-container.horizontal-nav > section > .title:hover, .section-container.horizontal-nav > .section > .title:hover {
+          background-color: #2d118e; }
+      .section-container.horizontal-nav > section .content, .section-container.horizontal-nav > .section .content {
+        display: none;
+        padding: 0.9375em;
+        background-color: #1c0764; }
+        .section-container.horizontal-nav > section .content > *:last-child, .section-container.horizontal-nav > .section .content > *:last-child {
+          margin-bottom: 0; }
+        .section-container.horizontal-nav > section .content > *:first-child, .section-container.horizontal-nav > .section .content > *:first-child {
+          padding-top: 0; }
+        .section-container.horizontal-nav > section .content > *:last-child:not(.flex-video), .section-container.horizontal-nav > .section .content > *:last-child:not(.flex-video) {
+          padding-bottom: 0; }
+      .section-container.horizontal-nav > section.active > .content, .section-container.horizontal-nav > .section.active > .content {
+        display: block; }
+      .section-container.horizontal-nav > section.active > .title, .section-container.horizontal-nav > .section.active > .title {
+        background: #d5d5d5; }
+        .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a {
+          color: #ffffff; }
+      .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > .title {
+        width: auto;
+        border: solid 1px #1c0764;
+        border-left: 0;
+        top: -1px;
+        position: absolute;
+        z-index: 1; }
+        .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > .title a {
+          width: 100%; }
+      .section-container.horizontal-nav > section .content, .section-container.horizontal-nav > .section .content {
+        display: none; }
+      .section-container.horizontal-nav > section.active > .content, .section-container.horizontal-nav > .section.active > .content {
+        display: block;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        top: -2px;
+        min-width: 12.5em;
+        border: solid 1px #1c0764; } }
+.no-js .section-container.auto, .no-js .section-container.accordion, .no-js .section-container.tabs, .no-js .section-container.vertical-tabs, .no-js .section-container.vertical-nav, .no-js .section-container.horizontal-nav {
+  width: 100%;
+  display: block;
+  margin-bottom: 1.25em;
+  border: 1px solid #1c0764;
+  border-top: none; }
+  .no-js .section-container.auto > section, .no-js .section-container.auto > .section, .no-js .section-container.accordion > section, .no-js .section-container.accordion > .section, .no-js .section-container.tabs > section, .no-js .section-container.tabs > .section, .no-js .section-container.vertical-tabs > section, .no-js .section-container.vertical-tabs > .section, .no-js .section-container.vertical-nav > section, .no-js .section-container.vertical-nav > .section, .no-js .section-container.horizontal-nav > section, .no-js .section-container.horizontal-nav > .section {
+    position: relative; }
+    .no-js .section-container.auto > section > .title, .no-js .section-container.auto > .section > .title, .no-js .section-container.accordion > section > .title, .no-js .section-container.accordion > .section > .title, .no-js .section-container.tabs > section > .title, .no-js .section-container.tabs > .section > .title, .no-js .section-container.vertical-tabs > section > .title, .no-js .section-container.vertical-tabs > .section > .title, .no-js .section-container.vertical-nav > section > .title, .no-js .section-container.vertical-nav > .section > .title, .no-js .section-container.horizontal-nav > section > .title, .no-js .section-container.horizontal-nav > .section > .title {
+      background-color: #2d118e;
+      cursor: pointer;
+      margin-bottom: 0; }
+      .no-js .section-container.auto > section > .title a, .no-js .section-container.auto > .section > .title a, .no-js .section-container.accordion > section > .title a, .no-js .section-container.accordion > .section > .title a, .no-js .section-container.tabs > section > .title a, .no-js .section-container.tabs > .section > .title a, .no-js .section-container.vertical-tabs > section > .title a, .no-js .section-container.vertical-tabs > .section > .title a, .no-js .section-container.vertical-nav > section > .title a, .no-js .section-container.vertical-nav > .section > .title a, .no-js .section-container.horizontal-nav > section > .title a, .no-js .section-container.horizontal-nav > .section > .title a {
+        padding: 0.9375em;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 0.875em;
+        white-space: normal; }
+      .no-js .section-container.auto > section > .title:hover, .no-js .section-container.auto > .section > .title:hover, .no-js .section-container.accordion > section > .title:hover, .no-js .section-container.accordion > .section > .title:hover, .no-js .section-container.tabs > section > .title:hover, .no-js .section-container.tabs > .section > .title:hover, .no-js .section-container.vertical-tabs > section > .title:hover, .no-js .section-container.vertical-tabs > .section > .title:hover, .no-js .section-container.vertical-nav > section > .title:hover, .no-js .section-container.vertical-nav > .section > .title:hover, .no-js .section-container.horizontal-nav > section > .title:hover, .no-js .section-container.horizontal-nav > .section > .title:hover {
+        background-color: #2d118e; }
+    .no-js .section-container.auto > section .content, .no-js .section-container.auto > .section .content, .no-js .section-container.accordion > section .content, .no-js .section-container.accordion > .section .content, .no-js .section-container.tabs > section .content, .no-js .section-container.tabs > .section .content, .no-js .section-container.vertical-tabs > section .content, .no-js .section-container.vertical-tabs > .section .content, .no-js .section-container.vertical-nav > section .content, .no-js .section-container.vertical-nav > .section .content, .no-js .section-container.horizontal-nav > section .content, .no-js .section-container.horizontal-nav > .section .content {
+      display: none;
+      padding: 0.9375em;
+      background-color: #1c0764; }
+      .no-js .section-container.auto > section .content > *:last-child, .no-js .section-container.auto > .section .content > *:last-child, .no-js .section-container.accordion > section .content > *:last-child, .no-js .section-container.accordion > .section .content > *:last-child, .no-js .section-container.tabs > section .content > *:last-child, .no-js .section-container.tabs > .section .content > *:last-child, .no-js .section-container.vertical-tabs > section .content > *:last-child, .no-js .section-container.vertical-tabs > .section .content > *:last-child, .no-js .section-container.vertical-nav > section .content > *:last-child, .no-js .section-container.vertical-nav > .section .content > *:last-child, .no-js .section-container.horizontal-nav > section .content > *:last-child, .no-js .section-container.horizontal-nav > .section .content > *:last-child {
+        margin-bottom: 0; }
+      .no-js .section-container.auto > section .content > *:first-child, .no-js .section-container.auto > .section .content > *:first-child, .no-js .section-container.accordion > section .content > *:first-child, .no-js .section-container.accordion > .section .content > *:first-child, .no-js .section-container.tabs > section .content > *:first-child, .no-js .section-container.tabs > .section .content > *:first-child, .no-js .section-container.vertical-tabs > section .content > *:first-child, .no-js .section-container.vertical-tabs > .section .content > *:first-child, .no-js .section-container.vertical-nav > section .content > *:first-child, .no-js .section-container.vertical-nav > .section .content > *:first-child, .no-js .section-container.horizontal-nav > section .content > *:first-child, .no-js .section-container.horizontal-nav > .section .content > *:first-child {
+        padding-top: 0; }
+      .no-js .section-container.auto > section .content > *:last-child:not(.flex-video), .no-js .section-container.auto > .section .content > *:last-child:not(.flex-video), .no-js .section-container.accordion > section .content > *:last-child:not(.flex-video), .no-js .section-container.accordion > .section .content > *:last-child:not(.flex-video), .no-js .section-container.tabs > section .content > *:last-child:not(.flex-video), .no-js .section-container.tabs > .section .content > *:last-child:not(.flex-video), .no-js .section-container.vertical-tabs > section .content > *:last-child:not(.flex-video), .no-js .section-container.vertical-tabs > .section .content > *:last-child:not(.flex-video), .no-js .section-container.vertical-nav > section .content > *:last-child:not(.flex-video), .no-js .section-container.vertical-nav > .section .content > *:last-child:not(.flex-video), .no-js .section-container.horizontal-nav > section .content > *:last-child:not(.flex-video), .no-js .section-container.horizontal-nav > .section .content > *:last-child:not(.flex-video) {
+        padding-bottom: 0; }
+    .no-js .section-container.auto > section.active > .content, .no-js .section-container.auto > .section.active > .content, .no-js .section-container.accordion > section.active > .content, .no-js .section-container.accordion > .section.active > .content, .no-js .section-container.tabs > section.active > .content, .no-js .section-container.tabs > .section.active > .content, .no-js .section-container.vertical-tabs > section.active > .content, .no-js .section-container.vertical-tabs > .section.active > .content, .no-js .section-container.vertical-nav > section.active > .content, .no-js .section-container.vertical-nav > .section.active > .content, .no-js .section-container.horizontal-nav > section.active > .content, .no-js .section-container.horizontal-nav > .section.active > .content {
+      display: block; }
+    .no-js .section-container.auto > section.active > .title, .no-js .section-container.auto > .section.active > .title, .no-js .section-container.accordion > section.active > .title, .no-js .section-container.accordion > .section.active > .title, .no-js .section-container.tabs > section.active > .title, .no-js .section-container.tabs > .section.active > .title, .no-js .section-container.vertical-tabs > section.active > .title, .no-js .section-container.vertical-tabs > .section.active > .title, .no-js .section-container.vertical-nav > section.active > .title, .no-js .section-container.vertical-nav > .section.active > .title, .no-js .section-container.horizontal-nav > section.active > .title, .no-js .section-container.horizontal-nav > .section.active > .title {
+      background: #d5d5d5; }
+      .no-js .section-container.auto > section.active > .title a, .no-js .section-container.auto > .section.active > .title a, .no-js .section-container.accordion > section.active > .title a, .no-js .section-container.accordion > .section.active > .title a, .no-js .section-container.tabs > section.active > .title a, .no-js .section-container.tabs > .section.active > .title a, .no-js .section-container.vertical-tabs > section.active > .title a, .no-js .section-container.vertical-tabs > .section.active > .title a, .no-js .section-container.vertical-nav > section.active > .title a, .no-js .section-container.vertical-nav > .section.active > .title a, .no-js .section-container.horizontal-nav > section.active > .title a, .no-js .section-container.horizontal-nav > .section.active > .title a {
+        color: #ffffff; }
+    .no-js .section-container.auto > section > .title, .no-js .section-container.auto > .section > .title, .no-js .section-container.accordion > section > .title, .no-js .section-container.accordion > .section > .title, .no-js .section-container.tabs > section > .title, .no-js .section-container.tabs > .section > .title, .no-js .section-container.vertical-tabs > section > .title, .no-js .section-container.vertical-tabs > .section > .title, .no-js .section-container.vertical-nav > section > .title, .no-js .section-container.vertical-nav > .section > .title, .no-js .section-container.horizontal-nav > section > .title, .no-js .section-container.horizontal-nav > .section > .title {
+      top: 0;
+      width: 100%;
+      margin: 0;
+      border-top: solid 1px #1c0764; }
+      .no-js .section-container.auto > section > .title a, .no-js .section-container.auto > .section > .title a, .no-js .section-container.accordion > section > .title a, .no-js .section-container.accordion > .section > .title a, .no-js .section-container.tabs > section > .title a, .no-js .section-container.tabs > .section > .title a, .no-js .section-container.vertical-tabs > section > .title a, .no-js .section-container.vertical-tabs > .section > .title a, .no-js .section-container.vertical-nav > section > .title a, .no-js .section-container.vertical-nav > .section > .title a, .no-js .section-container.horizontal-nav > section > .title a, .no-js .section-container.horizontal-nav > .section > .title a {
+        width: 100%; }
+    .no-js .section-container.auto > section .title, .no-js .section-container.auto > .section .title, .no-js .section-container.accordion > section .title, .no-js .section-container.accordion > .section .title, .no-js .section-container.tabs > section .title, .no-js .section-container.tabs > .section .title, .no-js .section-container.vertical-tabs > section .title, .no-js .section-container.vertical-tabs > .section .title, .no-js .section-container.vertical-nav > section .title, .no-js .section-container.vertical-nav > .section .title, .no-js .section-container.horizontal-nav > section .title, .no-js .section-container.horizontal-nav > .section .title {
+      position: static;
+      width: 100%;
+      border-left: 0;
+      border-right: 0; }
+    .no-js .section-container.auto > section .content, .no-js .section-container.auto > .section .content, .no-js .section-container.accordion > section .content, .no-js .section-container.accordion > .section .content, .no-js .section-container.tabs > section .content, .no-js .section-container.tabs > .section .content, .no-js .section-container.vertical-tabs > section .content, .no-js .section-container.vertical-tabs > .section .content, .no-js .section-container.vertical-nav > section .content, .no-js .section-container.vertical-nav > .section .content, .no-js .section-container.horizontal-nav > section .content, .no-js .section-container.horizontal-nav > .section .content {
+      position: static;
+      display: block;
+      width: 100%;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0; }
+
+.videogallery-con {background:#11053d;}
